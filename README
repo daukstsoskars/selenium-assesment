@@ -1,0 +1,20 @@
+1) Download Eclipse EE
+2) Inside Eclipse download TestNG from eclipse marketplace
+3) Import project from https://github.com/daukstsoskars/selenium-form-testing.git
+4) Locate InsuranceQuoteTest.xml and run it as TestNG Suite
+
+Notes:
+
+	- For simplicity i have only used the chromedriver, but multiple browsers can be introduced.
+	- Gradle can be introduced for running this test on different operating systems.
+	- This test does not generate a report, it logs the results into the console window.
+
+Project Classes and Structure
+
+	-DriverSetUp.java - sets up the appropriate driver and its capabilities for target browser.
+	-Step.java - Is a wrapper for raw selenium. Using Step class makes it very nice and easy to write test cases.
+	
+	-insuranceQuoteFormConstants.java - defines all of the element's locators within the form.
+	-insuranceQuoteFormTest.java - actual testing of the quote form is done in this class.
+	-insuranceQuotePageConstans.java - defines all of the components on a page (Header, Footer, forms, billboards).
+	-insuranceQuotePageTest.java - this class starts off the tests for different components on the page (in-order).

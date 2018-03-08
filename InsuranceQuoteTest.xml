@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test">
+
+	<parameter name="useDefaultListeners" value="false" />
+	
+	<!-- Add parameters for different browsers here -->
+	<!-- Add parameters for running the job remotely from Jenkins Service -->
+
+	<test name="AAA">
+		<classes>
+			<class name="oskar.test.InsuranceQuotePageTest" />
+		</classes>
+	</test>
+</suite>
